@@ -1,27 +1,25 @@
 public class q7 {
 
 	public static void main(String[] args) {
-		 int counter = 0;
-	        int primeNum = 0;
-
-	        for (int num = 2; num < 10000000; num++) {
-	            boolean isPrime = true;
-	            for (int factor = 2; factor < num; factor++) {
-
-	                if (num % factor == 0) {
-	                    isPrime = false;
-	                    break;
-	                }
-	            }
-	            if (isPrime) {
-	                primeNum = num;
-	                counter++;
-	            }
-	            if (counter == 10001) {
-	                break;
-	            }
-	        }
-	        System.out.println(primeNum);
-
+	     int i; int n=1; int c=0; int prime=0;
+	     while(prime!=10001)
+	     {
+	    	 for(i=2;i<=Math.sqrt(n);i++)
+	    	 {
+	    		 if(n%i==0)
+	    		 {
+	    			 c++;
+	    			 break;
+	    		 }
+	    	 }
+	    	 if(c==0)
+	    		 prime++;
+	    		 if(prime==10001)
+	    		 {
+	    			 System.out.println(n);
+	    		 }
+	    			 c=0;
+	    			 n+=2;
+	     }
 }
 }
