@@ -4,7 +4,7 @@ public class q7 {
 	     int i; int n=1; int c=0; int prime=0;
 	     while(prime!=10001)
 	     {
-	    	 for(i=2;i<=Math.sqrt(n);i++)
+	    	 for(i=3;i<=Math.sqrt(n);i+=2)
 	    	 {
 	    		 if(n%i==0)
 	    		 {
